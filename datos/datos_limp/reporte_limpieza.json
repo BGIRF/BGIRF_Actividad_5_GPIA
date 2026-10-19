@@ -1,0 +1,92 @@
+{
+  "version_datos": "1.1.0",
+  "filas_originales": 6497,
+  "filas_originales_por_tipo": {
+    "blanco": 4898,
+    "tinto": 1599
+  },
+  "valores_no_numericos": {
+    "acidez_fija": 0,
+    "acidez_volatil": 0,
+    "acido_citrico": 0,
+    "azucar_residual": 0,
+    "cloruros": 0,
+    "so2_libre": 0,
+    "so2_total": 0,
+    "densidad": 0,
+    "ph": 0,
+    "sulfatos": 0,
+    "alcohol": 0,
+    "calidad": 0
+  },
+  "nulos": {
+    "nulos_por_columna": {
+      "id_registro": 0,
+      "tipo": 0,
+      "acidez_fija": 0,
+      "acidez_volatil": 0,
+      "acido_citrico": 0,
+      "azucar_residual": 0,
+      "cloruros": 0,
+      "so2_libre": 0,
+      "so2_total": 0,
+      "densidad": 0,
+      "ph": 0,
+      "sulfatos": 0,
+      "alcohol": 0,
+      "calidad": 0
+    },
+    "filas_sin_objetivo_eliminadas": 0
+  },
+  "duplicados": {
+    "criterio": "coincidencia exacta en tipo + 11 variables + calidad; se conserva la primera",
+    "duplicados_eliminados": 1177,
+    "duplicados_por_tipo": {
+      "blanco": 937,
+      "tinto": 240
+    },
+    "etiquetas_en_conflicto": 0,
+    "coincidencias_entre_tipos_conservadas": 2
+  },
+  "reglas_negocio": {
+    "R1_negativos": 0,
+    "R2_so2_libre_mayor_total": 0,
+    "R3_fuera_de_rango": 0,
+    "R4_calidad_invalida": 0,
+    "filas_eliminadas_por_reglas": 0,
+    "R5_excede_so2_ue_marcadas": 63,
+    "R5_por_tipo": {
+      "blanco": 56,
+      "tinto": 7
+    }
+  },
+  "atipicos": {
+    "k_iqr": 3.0,
+    "registros_con_algun_atipico": 302,
+    "atipicos_por_variable": {
+      "acidez_fija": 7,
+      "acidez_volatil": 22,
+      "acido_citrico": 20,
+      "azucar_residual": 72,
+      "cloruros": 168,
+      "so2_libre": 12,
+      "so2_total": 4,
+      "densidad": 2,
+      "ph": 2,
+      "sulfatos": 23,
+      "alcohol": 0
+    }
+  },
+  "filas_finales": 5320,
+  "filas_finales_por_tipo": {
+    "blanco": 3961,
+    "tinto": 1359
+  },
+  "prevalencia_calidad_alta": 0.1897,
+  "prevalencia_por_tipo": {
+    "blanco": 0.2083,
+    "tinto": 0.1354
+  },
+  "sha256_limpio": "c40859031f721635fe8eb99ef2f48652b2fb46d7591f17d53d211c81376b2234",
+  "generado_utc": "2026-10-19T02:18:10Z"
+}

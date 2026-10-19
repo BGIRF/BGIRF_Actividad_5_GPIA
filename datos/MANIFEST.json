@@ -1,0 +1,35 @@
+{
+  "dataset": "Wine Quality (vinho verde) - Cortez et al. (2009), UCI ML Repository id 186",
+  "licencia": "CC BY 4.0",
+  "versiones": [
+    {
+      "version": "1.0.0",
+      "descripcion": "Archivos originales sin modificar",
+      "archivos": [
+        {
+          "ruta": "datos/datos_ini/winequality-red.csv",
+          "sha256": "4a402cf041b025d4566d954c3b9ba8635a3a8a01e039005d97d6a710278cf05e",
+          "filas": 1599
+        },
+        {
+          "ruta": "datos/datos_ini/winequality-white.csv",
+          "sha256": "76c3f809815c17c07212622f776311faeb31e87610d52c26d87d6e361b169836",
+          "filas": 4898
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "descripcion": "Unión tinto+blanco, nombres estandarizados, sin duplicados, reglas de negocio, objetivo binario",
+      "archivos": [
+        {
+          "ruta": "datos/datos_limp/wine_quality_limpio.csv",
+          "sha256": "c40859031f721635fe8eb99ef2f48652b2fb46d7591f17d53d211c81376b2234",
+          "filas": 5320
+        }
+      ],
+      "derivado_de": "1.0.0",
+      "generado_por": "fuentes/datos_prep.py"
+    }
+  ]
+}

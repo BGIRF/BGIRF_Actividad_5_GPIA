@@ -1,0 +1,59 @@
+{
+  "tracking_uri": "sqlite:////home/claude/Actividad5/mlflow.db",
+  "experimento": "Actividad5_WineQuality_CalidadAlta",
+  "dataset_sha256": "c40859031f721635fe8eb99ef2f48652b2fb46d7591f17d53d211c81376b2234",
+  "n_entrenamiento": 4256,
+  "n_prueba": 1064,
+  "campeon": "Random Forest",
+  "registro": {
+    "nombre": "wine_calidad_alta_clf",
+    "version": 1,
+    "alias": "champion",
+    "verificacion_recarga": true
+  },
+  "modelos": {
+    "Línea base (Dummy)": {
+      "run_id": "0b5b2f26f4bb49cf8c6d262f26fc2bc7",
+      "umbral": 0.5,
+      "mejores_params": {},
+      "n_combinaciones": null,
+      "tiempo_grid_s": 0
+    },
+    "Regresión logística": {
+      "run_id": "9e426d8bbe9f4c5f91be63b8442fd75c",
+      "umbral": 0.2204,
+      "mejores_params": {
+        "C": "1",
+        "class_weight": "None",
+        "escalador": "StandardScaler"
+      },
+      "n_combinaciones": 20,
+      "tiempo_grid_s": 11.2
+    },
+    "Random Forest": {
+      "run_id": "8997ad556bb541e5a1a19bd662c86e05",
+      "umbral": 0.3597,
+      "mejores_params": {
+        "class_weight": "balanced_subsample",
+        "max_depth": "20",
+        "max_features": "sqrt",
+        "min_samples_leaf": "3"
+      },
+      "n_combinaciones": 36,
+      "tiempo_grid_s": 197.7
+    },
+    "XGBoost": {
+      "run_id": "f1a7a9d65e5f4bb8b99cc36ea477990b",
+      "umbral": 0.2445,
+      "mejores_params": {
+        "learning_rate": "0.05",
+        "max_depth": "7",
+        "n_estimators": "200",
+        "scale_pos_weight": "1",
+        "subsample": "0.8"
+      },
+      "n_combinaciones": 48,
+      "tiempo_grid_s": 37.5
+    }
+  }
+}
